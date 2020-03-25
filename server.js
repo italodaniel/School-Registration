@@ -4,6 +4,7 @@ const routes = require("./routes")
 
 const server = express() //criando servidor ---- chamdno função express para dentro do servidor
 
+server.use(express.urlencoded({extended: true}))
 server.use(express.static("public"))
 server.use(routes)
 
@@ -16,6 +17,6 @@ nunjucks.configure("views", {
 })
 
 
-server.listen(5000, function () {
+server.listen(5001, function () {
    console.log("server");
 })

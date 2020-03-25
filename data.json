@@ -1,0 +1,22 @@
+{
+  "instructors": [
+    {
+      "avatar_url": "http://google.com",
+      "name": "Daniel italo abreu dos santos",
+      "birth": 1583366400000,
+      "tipo_aula": "a_distância",
+      "atuacao": "Fisíca",
+      "created_at": 1585106614764,
+      "id": 1
+    },
+    {
+      "id": 2,
+      "avatar_url": "http://google.com",
+      "name": "LAB-1",
+      "birth": 1583366400000,
+      "created_at": 1585107234468,
+      "tipo_aula": "a_distância",
+      "atuacao": "Fisíca"
+    }
+  ]
+}

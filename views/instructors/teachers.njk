@@ -2,5 +2,72 @@
 
 {% block content %}
 
-daniel
+    <form class="card" method="POST" action="/instructors">
+        <section class="avatar" style="background: url(https://source.unsplash.com/collection/676932/500x500) no-repeat center center / cover "></section>
+        <section class="details">
+
+            <h3>Novo Professor</h3>
+
+            <div class="item">
+                <div>Avatar URL
+                </div>
+                <div>
+                    <input type="url" name="avatar_url"
+                    placeholder="http://">
+                    
+                </div>
+            </div>
+
+            <div class="item">
+                <div>Nome Completo
+                </div>
+                <div>
+                    <input type="text" name="name"
+                    placeholder="Nome do professor">
+                </div>
+            </div>
+
+            <div class="item">
+                <div>Data de nascimento</div>
+                <div>
+                    <input type="date" 
+                    name="birth" 
+                    >
+                </div>
+            </div>
+
+            <div class="item" name="selec">
+                <div>Grau de escolaridade</div>
+                <div>
+                    <select class="select">
+                        <option value="EnsinoMédioCompleto" selected="selected">Ensino Médio Completo</option>
+                        <option value="EnsinoSuperiorCompleto">Ensino Superior Completo</option>
+                        <option value="MestradoeDoutorado">Mestrado e Doutorado</option>
+                    </select>
+                </div>
+            </div>
+
+
+            <div class="item">
+                <div>Tipo de aula</div>
+                <div>
+                    <span> <input type="radio" name="tipo_aula" value="presencial" checked >Presencial</span>
+                    <span> <input type="radio" name="tipo_aula" value="a_distância">À distância</span>
+                </div>
+            </div>
+            
+            <div class="item">
+                <div>Área de atuação</div>
+                <div>
+                    <input type="text" name="atuacao" 
+                    placeholder="Ex: Fisíca, Matematica, Geografia ">
+                </div>
+            </div>
+
+            <button type="submit">Salvar</button>
+
+        </section>
+
+    </form>
+
 {% endblock content %}
